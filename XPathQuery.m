@@ -141,7 +141,8 @@ NSArray *PerformXPathQuery(xmlDocPtr doc, NSString *query)
 	if (!nodes)
 	{
 		NSLog(@"Nodes was nil.");
-		/* Cleanup */
+		// Cleanup
+		// http://stackoverflow.com/questions/405749/parsing-html-on-the-iphone/5246118#5246118
         xmlXPathFreeObject(xpathObj);
         xmlXPathFreeContext(xpathCtx);		
 		return nil;
