@@ -3,7 +3,7 @@
 
 ### Setup
 
-- Under **Build Settings → Header Search Paths** add **/usr/include/libxml2
+- Under **Build Settings → Header Search Paths** add **/usr/include/libxml2**
 - In **Build Phases → Link Binary With Libraries** include **libxml2.dylib**
 
 ### Usage
