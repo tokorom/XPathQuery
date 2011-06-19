@@ -12,5 +12,8 @@
 //  appreciated but not required.
 //
 
+#import <libxml/parser.h>
+
 NSArray *PerformHTMLXPathQuery(NSData *document, NSString *query);
 NSArray *PerformXMLXPathQuery(NSData *document, NSString *query);
+NSArray *PerformXPathQuery(xmlDocPtr doc, NSString *query);
